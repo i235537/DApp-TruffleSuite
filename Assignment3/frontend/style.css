@@ -1,0 +1,58 @@
+:root {
+  --bg: #f7fafc;
+  --card: #ffffff;
+  --accent: #2b7cff;
+  --muted: #6b7280;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 32px;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 720px;
+}
+
+h1 { margin-bottom: 6px; }
+.muted { color: var(--muted); margin-left: 12px; font-size: 0.9rem; }
+
+.controls { margin: 12px 0; }
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15,15,15,0.06);
+  margin-bottom: 14px;
+}
+
+input {
+  padding: 8px;
+  width: 60%;
+  margin-right: 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.status {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}

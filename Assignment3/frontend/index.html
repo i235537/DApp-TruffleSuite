@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>MySimpleContract dApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>MySimpleContract dApp</h1>
+    <p>Connect MetaMask and interact with the local Truffle/Ganache contract.</p>
+
+    <div class="controls">
+      <button id="connectBtn">Connect MetaMask</button>
+      <span id="account" class="muted"></span>
+    </div>
+
+    <section class="card">
+      <h2>Message</h2>
+      <p id="currentMessage">—</p>
+      <input id="messageInput" placeholder="Enter a message" />
+      <button id="setMessageBtn">Set Message</button>
+    </section>
+
+    <section class="card">
+      <h2>Counter</h2>
+      <p id="counterValue">—</p>
+      <button id="incrementBtn">Increment</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <div id="status" class="status"></div>
+
+    <footer>
+      <p>ABI loaded from <code>../build/contracts/MySimpleContract.json</code></p>
+      <p>Make sure Ganache is running and you deployed the contract with Truffle.</p>
+    </footer>
+  </main>
+
+  <!-- Ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
